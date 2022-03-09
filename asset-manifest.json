@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TZ-AB-Drinks/static/css/main.88d32920.css",
+    "main.js": "/TZ-AB-Drinks/static/js/main.d0a6bbb4.js",
+    "static/media/like.svg": "/TZ-AB-Drinks/static/media/like.e9d1d17ebb385a215e74444c78b87931.svg",
+    "static/media/deleteIcon.svg": "/TZ-AB-Drinks/static/media/deleteIcon.9137dae7396403603e68fb13388edf34.svg",
+    "index.html": "/TZ-AB-Drinks/index.html",
+    "main.88d32920.css.map": "/TZ-AB-Drinks/static/css/main.88d32920.css.map",
+    "main.d0a6bbb4.js.map": "/TZ-AB-Drinks/static/js/main.d0a6bbb4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88d32920.css",
+    "static/js/main.d0a6bbb4.js"
+  ]
+}
