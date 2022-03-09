@@ -2,6 +2,7 @@
   "name": "spa-ab",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Rinat21072021.github.io/TZ-AB-Drinks",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -12,6 +13,7 @@
     "@types/react-dom": "^17.0.9",
     "@types/react-redux": "^7.1.23",
     "axios": "^0.26.0",
+    "gh-pages": "^3.2.3",
     "normalize-css": "^2.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -26,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -46,35 +46,20 @@ export const drinksReducer = (state = initialState, action: ActionsType): Drinks
 }
 
 type setDrinkAT = ReturnType<typeof setDrinksAC>
-export const setDrinksAC = (drinks: Array<ItemType>) => {
-	return {
-		type: Action_Type.SET_DRINKS,
-		drinks,
-	} as const
-}
+export const setDrinksAC = (drinks: Array<ItemType>) => ({type: Action_Type.SET_DRINKS, drinks} as const)
+
 type setLikeAT = ReturnType<typeof setLikeAC>
-export const setLikeAC = (id: string, filter: boolean) => {
-	return {
-		type: Action_Type.SET_LIKE,
-		id,
-		filter
-	} as const
-}
+export const setLikeAC = (id: string, filter: boolean) => ({type: Action_Type.SET_LIKE, id, filter} as const)
+
 type changeFilterAT = ReturnType<typeof changeFilterAC>
-export const changeFilterAC = (id: string, filter: FilterValueType) => {
-	return {
-		type: Action_Type.CHANGE_FILTER,
-		id,
-		filter
-	} as const
-}
+export const changeFilterAC = (id: string, filter: FilterValueType) => ({
+	type: Action_Type.CHANGE_FILTER,
+	id,
+	filter
+} as const)
+
 type deleteCardAT = ReturnType<typeof deleteCardAC>
-export const deleteCardAC = (id: string) => {
-	return {
-		type: Action_Type.DELETE_CARD,
-		id
-	} as const
-}
+export const deleteCardAC = (id: string) => ({type: Action_Type.DELETE_CARD, id} as const)
 
 export const setDrinksThunk = async (dispatch: Dispatch) => {
 	try {
